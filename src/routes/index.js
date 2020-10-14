@@ -7,7 +7,7 @@ const Testimonios = require('../controllers/testimonio')
  module.exports = app =>{
     rutas.get('/', Home.index)
     rutas.get('/testimonios', Testimonios.index)
-    rutas.get('/', Home.index)
-    rutas.get('/', Home.index)
+    rutas.get('/reunion', Home.index)
+    rutas.get('/about', Home.about)
     app.use(rutas)
 }
